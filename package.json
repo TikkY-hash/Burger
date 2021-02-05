@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kirill",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/polyfill": "^7.12.1",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.8.3",
+    "loader": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0"
+  }
+}

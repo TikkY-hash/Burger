@@ -1,0 +1,222 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+.nav {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.link__list {
+    display: flex;
+}
+
+.link__list li {
+    padding-right: 15px;
+}
+
+.burger {
+    background-color:white;
+    width: 40px;
+    height: 39px;
+    border-radius: 999px;
+    position: relative;
+    z-index: 999;
+    margin-right: 30px;
+}
+
+.burger__menu span{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color:black;
+    top: 50%;
+    left: 49%;
+    margin-left: -9px;
+    visibility: visible;
+}
+
+.burger__menu span::after {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color:black;
+    content: '';
+    transform: translateY(-5px);
+    transition: .2s all linear;
+}
+
+.burger__menu span::before {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color:black;
+    content: '';
+    transform: translateY(5px);
+    transition: .2s all linear;
+}
+
+.block__display{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    background: #00ADD3;
+    padding-right: 0px;
+    transition: 1s all ease;
+}
+
+.block__active {
+    transition: 1s all ease;
+    padding-right: 300px;
+}
+
+.text__active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  margin-top: 20vh
+}
+
+
+.text__width{
+  width: 100%;
+  max-width: 300px;
+}
+
+.text__width__responsive{
+  width: 100%;
+  max-width: 100%;
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.link__style {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid orange;
+}
+
+.body__active {
+   overflow: hidden;
+}
+
+body {
+  overflow: visible;
+}
+
+.block__responsive {
+  padding-right: 100%;
+}
+
+.text__responsive {
+    width: 100%;
+}
+
+
+
+.icon__active span::after {
+ 
+  transform: rotate(45deg);
+  transition: .2s all linear;
+}
+
+.icon__active span::before {
+  
+  transform: rotate(-45deg);
+  transition: .2s all linear;
+}
+
+.icon__active span {
+   height: 0px;
+}
