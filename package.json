@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "burger-menu",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,17 @@
     "@babel/preset-env": "^7.12.13",
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TikkY-hash/Burger.git"
+  },
+  "keywords": [
+    "burger",
+    "menu"
+  ],
+  "bugs": {
+    "url": "https://github.com/TikkY-hash/Burger/issues"
+  },
+  "homepage": "https://github.com/TikkY-hash/Burger#readme"
 }
